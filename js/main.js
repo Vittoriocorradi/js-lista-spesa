@@ -11,10 +11,8 @@ const nuovoArticolo = document.getElementById('nuovo-articolo');
 bottoneAggiungi.addEventListener('click',
 function() {
     elementiLista.push(nuovoArticolo.value);
-    // Ciclo while
-    while (i < elementiLista.length) {
-        listaSpesa.innerHTML += `<li>${elementiLista[i]}</li>`;
-        i++;
-    }
+    listaSpesa.innerHTML += `<li>${nuovoArticolo.value}</li>`;
+    console.log(nuovoArticolo.value);
 }
 )
+
