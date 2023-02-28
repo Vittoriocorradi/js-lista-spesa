@@ -16,6 +16,73 @@ COMMON
 -------
 */
 
+body {
+    height: 100vh;
+    background-color: #5e0800;
+    padding-top: 3.4375rem;
+    color: #ddd;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .ms-flex {
     display: flex;
+}
+
+/*
+-------
+MAIN
+-------
+*/
+
+.container {
+    max-width: 71.25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.875rem;
+    font-size: 2.8em;
+}
+
+#nuovo-articolo {
+    margin-bottom: 1.25rem;
+}
+
+#cibo-bevande {
+    margin-right: 1.875rem;
+}
+
+#cibo-bevande,
+#accessori-vettovaglie {
+    vertical-align: middle;
+    margin-left: .125rem;
+}
+
+#bottone-aggiunta {
+    margin-top: 1.5625rem;
+    padding: .625rem 1.5625rem;
+    border: .1875rem solid #000;
+    font-family: inherit;
+    background-color: #000;
+    color: #ccc;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.container .liste {
+    justify-content: space-around;
+    margin-top: 1.875rem;
+}
+
+li:first-child {
+    margin-top: 1.5625rem;
+}
+
+li {
+    margin-top: .3125rem;
 }

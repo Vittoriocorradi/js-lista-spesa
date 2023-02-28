@@ -4,38 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- /Font -->
     <title>Lista per grigliata</title>
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Lista della spesa per grigliata</h1>
-        <div>
-            <label for="nuovo-articolo">Cosa vuoi aggiungere?</label>
-            <br>
-            <input type="text" id="nuovo-articolo">
-        </div>
-        <div class="checkbox">
-            <label for="cibo-bevande">Cibo e bevande</label>
-            <input type="radio" name="scelta-categoria" id="cibo-bevande">
-            <label for="accessorri-vettovaglie">Accessori e vettovaglie</label>
-            <input type="radio" name="scelta-categoria" id="accessori-vettovaglie">
-        </div>
-        <div>
-            <button type="button" id="bottone-aggiunta">Aggiungi</button>
-        </div>
-        <div class="liste ms-flex">
+    <main>
+        <div class="container">
+            <h1>Lista della spesa per grigliata</h1>
             <div>
-                <h2>Cibo e bevande</h2>
-                <ul id="lista-cibi-bevande"></ul>
+                <label for="nuovo-articolo">Cosa vuoi aggiungere?</label>
+                <br>
+                <input type="text" id="nuovo-articolo">
+            </div>
+            <div class="checkbox">
+                <label for="cibo-bevande">Cibo e bevande</label>
+                <input type="radio" name="scelta-categoria" id="cibo-bevande">
+                <label for="accessorri-vettovaglie">Accessori e vettovaglie</label>
+                <input type="radio" name="scelta-categoria" id="accessori-vettovaglie">
             </div>
             <div>
-                <h2>Accessori e vettovaglie</h2>
-                <ul id="lista-accessori-vettovaglie"></ul>
+                <button type="button" id="bottone-aggiunta">Aggiungi</button>
+            </div>
+            <div class="liste ms-flex">
+                <div>
+                    <h2>Cibo e bevande</h2>
+                    <ul id="lista-cibi-bevande"></ul>
+                </div>
+                <div>
+                    <h2>Accessori e vettovaglie</h2>
+                    <ul id="lista-accessori-vettovaglie"></ul>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
