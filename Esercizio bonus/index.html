@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista per grigliata</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista della spesa per grigliata</h1>
+        <div>
+            <label for="nuovo-articolo">Cosa vuoi aggiungere?</label>
+            <br>
+            <input type="text" id="nuovo-articolo">
+        </div>
+        <div class="checkbox">
+            <label for="cibo-bevande">Cibo e bevande</label>
+            <input type="radio" name="scelta-categoria" id="cibo-bevande">
+            <label for="accessorri-vettovaglie">Accessori e vettovaglie</label>
+            <input type="radio" name="scelta-categoria" id="accessori-vettovaglie">
+        </div>
+        <div>
+            <button type="button" id="bottone-aggiunta">Aggiungi</button>
+        </div>
+        <div class="liste ms-flex">
+            <div>
+                <h2>Cibo e bevande</h2>
+                <ul id="lista-cibi-bevande"></ul>
+            </div>
+            <div>
+                <h2>Accessori e vettovaglie</h2>
+                <ul id="lista-accessori-vettovaglie"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
